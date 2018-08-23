@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'abootstrap';
+
+  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
+    console.log(`Add article title here ${title.value}`);
+    return false;
+  }
 }
